@@ -4,6 +4,13 @@
   <remote name="aosp"
           fetch="https://android.googlesource.com"
           review="android-review.googlesource.com" />
+  <remote name="bb"
+          fetch="https://bitbucket.org/" />
+  <remote name="eucos"
+          fetch="https://github.com/EuclideanOS"
+          revision="nougat-mr2" /> 
+  <remote name="devices"
+          fetch="https://github.com/EuclideanOS-Devices" />
   <remote name="github"
           fetch="https://github.com" />
   <default revision="refs/tags/android-7.1.2_r5"
@@ -557,5 +564,7 @@
   <project path="tools/swt" name="platform/tools/swt" groups="notdefault,tools" />
   <project path="tools/tradefederation" name="platform/tools/tradefederation" groups="notdefault,tradefed" />
   <project path="tools/test/connectivity" name="platform/tools/test/connectivity" groups="pdk" />
-</manifest>
 
+  <!-- EuclideanOS additions -->
+  <include name="manifests/eucos.xml"/>
+</manifest>

@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Manifest -->
+  <project path="manifest" name="android_manifest" remote="eucos" />
+
+  <!-- Build repositories -->
+  <remove-project name="platform/build" />
+  <project path="build" name="android_build" remote="eucos">
+    <copyfile src="core/root.mk" dest="Makefile" />
+  </project>
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="PureNexusProject/android_bootable_recovery" groups="pdk" remote="github" revision="n-mr2" />
+
+  <remove-project name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" />
+  <project path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" name="AOSPA/android_gcc_linux-x86_aarch64_aarch64-linux-android-4.9" remote="github" revision="nougat-mr1" clone-depth="1" />
+  <remove-project name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" />
+  <project path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" name="AOSPA/android_gcc_linux-x86_arm-linux-android-4.9" remote="github" revision="nougat-mr1" clone-depth="1" />
+
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="eucos" />
+  <remove-project name="platform/hardware/broadcom/wlan"/>
+  <project path="hardware/broadcom/wlan" name="DirtyUnicorns/android_hardware_broadcom_wlan" remote="github" revision="n7x" />
+  <remove-project name="platform/hardware/qcom/audio"/>
+  <project path="hardware/qcom/audio" name="DirtyUnicorns/android_hardware_qcom_audio" remote="github" revision="n7x" />
+  <remove-project name="platform/hardware/qcom/bt"/>
+  <project path="hardware/qcom/bt" name="DirtyUnicorns/android_hardware_qcom_bt" remote="github" revision="n7x" />
+  <remove-project name="platform/hardware/qcom/camera"/>
+  <project path="hardware/qcom/camera" name="DirtyUnicorns/android_hardware_qcom_camera" remote="github" revision="n7x" />
+  <remove-project name="platform/hardware/qcom/display"/>
+  <project path="hardware/qcom/display" name="DirtyUnicorns/android_hardware_qcom_display" remote="github" revision="n7x" />
+  <remove-project name="platform/hardware/qcom/gps"/>
+  <project path="hardware/qcom/gps" name="DirtyUnicorns/android_hardware_qcom_gps" remote="github" revision="n7x" />
+  <remove-project name="platform/hardware/qcom/keymaster"/>
+  <project path="hardware/qcom/keymaster" name="DirtyUnicorns/android_hardware_qcom_keymaster" remote="github" revision="n7x" />
+  <remove-project name="platform/hardware/qcom/media"/>
+  <project path="hardware/qcom/media" name="DirtyUnicorns/android_hardware_qcom_media" remote="github" revision="n7x" />
+  <project path="hardware/qcom/msm8x74" name="DirtyUnicorns/android_hardware_qcom_msm8x74" remote="github" revision="n" />
+  <remove-project name="platform/hardware/qcom/power"/>
+  <project path="hardware/qcom/power" name="DirtyUnicorns/android_hardware_qcom_power" remote="github" revision="n7x" />
+  <remove-project name="platform/hardware/qcom/wlan"/>
+  <project path="hardware/qcom/wlan" name="DirtyUnicorns/android_hardware_qcom_wlan" remote="github" revision="n7x" />
+
+  <!-- Native -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="android_bionic" remote="eucos" />
+  <remove-project name="platform/art" />
+  <project path="art" name="android_art" groups="pdk" remote="eucos" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="android_frameworks_av" groups="pdk" remote="eucos" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="eucos" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="android_frameworks_native" groups="pdk" remote="eucos" />   
+  <remove-project name="platform/frameworks/support" />
+  <project path="frameworks/support" name="PureNexusProject/android_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="github" revision="n-mr2" />
+  <remove-project name="platform/frameworks/webview" />
+  <project path="frameworks/webview" name="OmniROM/android_frameworks_webview" remote="github" revision="android-7.1" groups="pdk-cw-fs" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/Calendar" />
+  <project path="packages/apps/Calendar" name="OmniROM/android_packages_apps_Calendar" remote="github" revision="android-7.1" />
+  <remove-project name="platform/packages/apps/CellBroadcastReceiver" />
+  <project path="packages/apps/CellBroadcastReceiver" name="PureNexusProject/android_packages_apps_CellBroadcastReceiver" groups="pdk-fs" remote="github" revision="n-mr2" />
+  <remove-project name="platform/packages/apps/Contacts" />
+  <project path="packages/apps/Contacts" name="OmniROM/android_packages_apps_Contacts" remote="github" revision="android-7.1" />
+  <remove-project name="platform/packages/apps/ContactsCommon" />
+  <project path="packages/apps/ContactsCommon" name="OmniROM/android_packages_apps_ContactsCommon" remote="github" revision="android-7.1" />
+  <remove-project name="platform/packages/apps/Phone" />
+  <project path="packages/apps/DSPManager" name="OmniROM/android_packages_apps_DSPManager" remote="github" revision="android-7.1" />
+  <remove-project name="platform/packages/apps/Gallery2" />
+  <project path="packages/apps/Gallery2" name="OmniROM/android_packages_apps_Gallery2" remote="github" revision="android-7.1" />
+  <remove-project name="platform/packages/apps/Launcher3" />
+  <project path="packages/apps/Launcher3" name="OmniROM/android_packages_apps_Launcher3" remote="github" revision="android-7.1" />
+  <remove-project name="platform/packages/apps/Messaging" />
+  <project path="packages/apps/Messaging" name="OmniROM/android_packages_apps_Messaging" remote="github" revision="android-7.1" />
+  <remove-project name="platform/packages/apps/MusicFX" />
+  <project path="packages/apps/MusicFX" name="OmniROM/android_packages_apps_MusicFX" remote="github" revision="android-7.1" />
+  <project path="packages/apps/OmniStyle" name="DirtyUnicorns/android_packages_apps_OmniStyle" remote="github" revision="n7x" /> 
+  <project path="packages/apps/OpenDelta" name="android_packages_apps_OpenDelta" remote="eucos" />
+  <remove-project name="platform/packages/apps/PackageInstaller" />
+  <project path="packages/apps/PackageInstaller" name="PureNexusProject/android_packages_apps_PackageInstaller" groups="pdk-fs" remote="github" revision="n-mr2" />
+  <remove-project name="platform/packages/apps/PhoneCommon" />
+  <project path="packages/apps/PhoneCommon" name="DirtyUnicorns/android_packages_apps_PhoneCommon" remote="github" revision="n7x" />
+  <project path="packages/apps/Phonograph" name="OmniROM/android_packages_apps_Phonograph" remote="github" revision="android-7.1" /> 
+  <project path="packages/apps/PureSettings" name="android_packages_apps_PureSettings" remote="eucos" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="eucos" />
+  <remove-project name="platform/packages/inputmethods/LatinIME" />
+  <project path="packages/inputmethods/LatinIME" name="DirtyUnicorns/android_packages_inputmethods_LatinIME" remote="github" revision="n7x" />
+  <remove-project name="platform/packages/providers/DownloadProvider" />
+  <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="eucos" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/MediaProvider" name="PureNexusProject/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="n-mr2" />
+  <project path="packages/services/OmniJaws" name="DirtyUnicorns/android_packages_services_OmniJaws" remote="github" revision="n7x" />
+
+  <!-- External --> 
+  <project path="external/busybox" name="PureNexusProject/android_external_busybox" remote="github" revision="n-mr2" />
+  <remove-project name="platform/external/e2fsprogs" />
+  <project path="external/e2fsprogs" name="AOSPA/android_external_e2fsprogs" remote="github" revision="nougat-mr1" />
+  <remove-project name="platform/external/f2fs-tools" />
+  <project path="external/f2fs-tools" name="AOSPA/android_external_f2fs-tools" remote="github" revision="nougat-mr1" />
+  <remove-project name="platform/external/llvm" />
+  <project path="external/llvm" name="CopperheadOS/platform_external_llvm" groups="pdk" remote="github" revision="nougat-mr2-release" />
+
+  <!-- System -->
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="eucos" />
+  <remove-project name="platform/system/extras" />
+  <project path="system/extras" name="android_system_extras" groups="pdk" remote="eucos" />
+  <remove-project name="platform/system/media" />
+  <project path="system/media" name="OmniROM/android_system_media" groups="pdk" remote="github" revision="android-7.1" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" groups="pdk" remote="eucos" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="android_system_vold" remote="eucos" /> 
+
+  <!-- Vendor -->
+  <project path="vendor/eucos" name="android_vendor_eucos" remote="eucos" >
+    <copyfile src="build.sh" dest="rom-build.sh" />
+  </project>
+  <project path="vendor/qcom/sdclang-3.8/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.8_linux-x86" remote="github" revision="nougat-mr1" />
+
+  <!-- Telephony -->
+  <remove-project name="platform/packages/apps/Dialer" />
+  <project path="packages/apps/Dialer" name="OmniROM/android_packages_apps_Dialer" remote="github" revision="android-7.1" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" groups="pdk-cw-fs,pdk-fs" remote="eucos" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" groups="pdk-cw-fs,pdk-fs" remote="eucos" />
+
+  <!-- Substratum -->
+  <project path="packages/apps/ThemeInterfacer" name="substratum/interfacer" remote="github" revision="n-rootless" />
+
+  <!-- Obsolete Packages -->
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-mips" />
+  <remove-project name="device/generic/mini-emulator-mips64" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google/accessory/arduino" />
+  <remove-project name="device/google/accessory/demokit" />
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/google/dragon" />
+  <remove-project name="device/google/dragon-kernel" />
+  <remove-project name="device/google/marlin" />
+  <remove-project name="device/google/marlin-kernel" />
+  <remove-project name="device/htc/flounder" />
+  <remove-project name="device/htc/flounder-kernel" />
+  <remove-project name="device/huawei/angler" />
+  <remove-project name="device/huawei/angler-kernel" />
+  <remove-project name="device/intel/edison" />
+  <remove-project name="device/lge/bullhead" />
+  <remove-project name="device/lge/bullhead-kernel" />
+  <remove-project name="device/linaro/hikey" />
+  <remove-project name="device/linaro/hikey-kernel" />
+  <remove-project name="device/moto/shamu" />
+  <remove-project name="device/moto/shamu-kernel" />
+  <remove-project name="device/sample"/>
+  <remove-project name="platform/packages/apps/Gallery" />
+  <remove-project name="platform/packages/apps/Launcher2" />
+  <remove-project name="platform/packages/apps/Music" />
+  <remove-project name="platform/packages/apps/QuickSearchBox" />
+  <remove-project name="platform/packages/inputmethods/OpenWnn" />
+
+</manifest>
