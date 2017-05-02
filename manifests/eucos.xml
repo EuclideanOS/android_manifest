@@ -94,7 +94,7 @@
   <project path="packages/providers/DownloadProvider" name="android_packages_providers_DownloadProvider" groups="pdk-cw-fs,pdk-fs" remote="eucos" />
   <remove-project name="platform/packages/providers/MediaProvider" />
   <project path="packages/providers/MediaProvider" name="PureNexusProject/android_packages_providers_MediaProvider" groups="pdk-cw-fs,pdk-fs" remote="github" revision="n-mr2" />
-  <project path="packages/services/OmniJaws" name="DirtyUnicorns/android_packages_services_OmniJaws" remote="github" revision="n7x" />
+  <project path="packages/services/OmniJaws" name="OmniROM/android_packages_services_OmniJaws" remote="github" revision="android-7.1" />
 
   <!-- External --> 
   <project path="external/busybox" name="PureNexusProject/android_external_busybox" remote="github" revision="n-mr2" />
