@@ -90,7 +90,6 @@
   <project path="packages/apps/PureSettings" name="android_packages_apps_PureSettings" remote="eucos" />
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" groups="pdk-fs" remote="eucos" />
-  <project path="packages/apps/ScreenStabilization" name="android_packages_apps_ScreenStabilization" remote="eucos" />
   <remove-project name="platform/packages/inputmethods/LatinIME" />
   <project path="packages/inputmethods/LatinIME" name="PureNexusProject/android_packages_inputmethods_LatinIME" remote="github" revision="n-mr2" />
   <remove-project name="platform/packages/providers/DownloadProvider" />
