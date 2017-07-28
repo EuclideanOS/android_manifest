@@ -28,7 +28,7 @@
   <remove-project name="platform/hardware/qcom/camera"/>
   <project path="hardware/qcom/camera" name="LineageOS/android_hardware_qcom_camera" remote="github" revision="cm-14.1" />
   <remove-project name="platform/hardware/qcom/display"/>
-  <project path="hardware/qcom/display" name="LineageOS/android_hardware_qcom_display" remote="github" revision="cm-14.1" />
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="eucos" />
   <remove-project name="platform/hardware/qcom/gps"/>
   <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" remote="github" revision="cm-14.1" />
   <remove-project name="platform/hardware/qcom/keymaster"/>
