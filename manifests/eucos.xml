@@ -22,21 +22,21 @@
   <remove-project name="platform/hardware/broadcom/wlan"/>
   <project path="hardware/broadcom/wlan" name="LineageOS/android_hardware_broadcom_wlan" remote="github" revision="cm-14.1" />
   <remove-project name="platform/hardware/qcom/audio"/>
-  <project path="hardware/qcom/audio" name="LineageOS/android_hardware_qcom_audio" remote="github" revision="cm-14.1" />
+  <project path="hardware/qcom/audio" name="DirtyUnicorns/android_hardware_qcom_audio" remote="github" revision="n7x" />
   <remove-project name="platform/hardware/qcom/bt"/>
-  <project path="hardware/qcom/bt" name="LineageOS/android_hardware_qcom_bt" remote="github" revision="cm-14.1" />
+  <project path="hardware/qcom/bt" name="DirtyUnicorns/android_hardware_qcom_bt" remote="github" revision="n7x" />
   <remove-project name="platform/hardware/qcom/camera"/>
-  <project path="hardware/qcom/camera" name="LineageOS/android_hardware_qcom_camera" remote="github" revision="cm-14.1" />
+  <project path="hardware/qcom/camera" name="DirtyUnicorns/android_hardware_qcom_camera" remote="github" revision="n7x" />
   <remove-project name="platform/hardware/qcom/display"/>
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="eucos" />
   <remove-project name="platform/hardware/qcom/gps"/>
-  <project path="hardware/qcom/gps" name="LineageOS/android_hardware_qcom_gps" remote="github" revision="cm-14.1" />
+  <project path="hardware/qcom/gps" name="DirtyUnicorns/android_hardware_qcom_gps" remote="github" revision="n7x" />
   <remove-project name="platform/hardware/qcom/keymaster"/>
-  <project path="hardware/qcom/keymaster" name="LineageOS/android_hardware_qcom_keymaster" remote="github" revision="cm-14.1" />
+  <project path="hardware/qcom/keymaster" name="DirtyUnicorns/android_hardware_qcom_keymaster" remote="github" revision="n7x" />
   <remove-project name="platform/hardware/qcom/media"/>
-  <project path="hardware/qcom/media" name="LineageOS/android_hardware_qcom_media" remote="github" revision="cm-14.1" />
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="eucos" />
   <remove-project name="platform/hardware/qcom/wlan"/>
-  <project path="hardware/qcom/wlan" name="LineageOS/android_hardware_qcom_wlan" remote="github" revision="cm-14.1" />
+  <project path="hardware/qcom/wlan" name="DirtyUnicorns/android_hardware_qcom_wlan" remote="github" revision="n7x" />
 
   <!-- Native -->
   <remove-project name="platform/bionic" />
