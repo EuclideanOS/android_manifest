@@ -125,6 +125,8 @@
   <project path="external/zlib" name="AOSPA/android_external_zlib" remote="github" revision="nougat-mr2" />
 
   <!-- System -->
+  <remove-project name="platform/system/bt" />
+  <project path="system/bt" name="CopperheadOS/platform_system_bt" groups="pdk" remote="github" revision="nougat-mr2-release" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="android_system_core" groups="pdk" remote="eucos" />
   <remove-project name="platform/system/extras" />
