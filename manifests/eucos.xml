@@ -26,7 +26,7 @@
   <remove-project name="platform/hardware/qcom/bt"/>
   <project path="hardware/qcom/bt" name="DirtyUnicorns/android_hardware_qcom_bt" remote="github" revision="n7x" />
   <remove-project name="platform/hardware/qcom/camera"/>
-  <project path="hardware/qcom/camera" name="DirtyUnicorns/android_hardware_qcom_camera" remote="github" revision="n7x" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="eucos" />
   <remove-project name="platform/hardware/qcom/display"/>
   <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="eucos" />
   <remove-project name="platform/hardware/qcom/gps"/>
