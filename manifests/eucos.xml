@@ -101,6 +101,8 @@
   <project path="external/e2fsprogs" name="AOSPA/android_external_e2fsprogs" remote="github" revision="nougat-mr2" />
   <remove-project name="platform/external/f2fs-tools" />
   <project path="external/f2fs-tools" name="AOSPA/android_external_f2fs-tools" remote="github" revision="nougat-mr2" />
+  <remove-project name="platform/external/gemmlowp" />
+  <project path="external/gemmlowp" name="AOSPA/android_external_gemmlowp" remote="github" revision="nougat-mr2" />
   <remove-project name="platform/external/vulkan-validation-layers" />
   <project path="external/vulkan-validation-layers" name="AOSPA/android_external_vulkan-validation-layers" remote="github" revision="nougat-mr2" />
   <remove-project name="platform/external/libnfc-nci" />
