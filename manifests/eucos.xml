@@ -56,7 +56,7 @@
   <remove-project name="platform/frameworks/support" />
   <project path="frameworks/support" name="PureNexusProject-Legacy/android_frameworks_support" groups="pdk-cw-fs,pdk-fs" remote="github" revision="n-mr2" />
   <remove-project name="platform/frameworks/webview" />
-  <project path="frameworks/webview" name="OmniROM/android_frameworks_webview" remote="github" revision="android-7.1" groups="pdk-cw-fs" />
+  <project path="frameworks/webview" name="android_frameworks_webview" remote="eucos" groups="pdk-cw-fs" />
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Calendar" />
