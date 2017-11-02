@@ -126,8 +126,8 @@
   <project path="external/jemalloc" name="AOSPA/android_external_jemalloc" remote="github" revision="nougat-mr2" />
   <remove-project name="platform/external/sqlite" />
   <project path="external/sqlite" name="AOSPA/android_external_sqlite" remote="github" revision="nougat-mr2" />
-  <remove-project name="platform/external/wpa/supplicant/8" />
-  <project path="external/wpa/supplicant/8" name="AOSPA/android_external_wpa_supplicant_8" remote="github" revision="nougat-mr2" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="AOSPA/android_external_wpa_supplicant_8" remote="github" revision="nougat-mr2" />
   <remove-project name="platform/external/webp" />
   <project path="external/webp" name="AOSPA/android_external_webp" remote="github" revision="nougat-mr2" />
   <remove-project name="platform/external/webrtc" />
