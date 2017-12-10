@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Manifest -->
+  <project path="manifest" name="android_manifest" remote="eucos" />
+
+  <!-- Build repositories -->
+  <remove-project name="platform/build" />
+  <project path="build/make" name="android_build" remote="eucos" groups="pdk" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="android_build_soong" remote="eucos" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/broadcom/wlan"/>
+  <project path="hardware/broadcom/wlan" name="android_hardware_broadcom_wlan" remote="eucos" />
+  <remove-project name="platform/hardware/qcom/audio"/>
+  <project path="hardware/qcom/audio" name="android_hardware_qcom_audio" remote="eucos" />
+  <project path="hardware/qcom/camera" name="android_hardware_qcom_camera" remote="eucos" />
+  <remove-project name="platform/hardware/qcom/display"/>
+  <project path="hardware/qcom/display" name="android_hardware_qcom_display" remote="eucos" />
+  <remove-project name="platform/hardware/qcom/gps"/>
+  <project path="hardware/qcom/gps" name="android_hardware_qcom_gps" remote="eucos" />
+  <remove-project name="platform/hardware/qcom/media"/>
+  <project path="hardware/qcom/media" name="android_hardware_qcom_media" remote="eucos" />
+  
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="eucos" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" groups="pdk-cw-fs,pdk-fs" remote="eucos" />
+
+  <!-- System -->
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="android_system_core" groups="pdk" remote="eucos" />
+  <remote-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="eucos" />
+
+  <!-- Vendor -->
+  <project path="vendor/eucos" name="android_vendor_eucos" remote="eucos" />
+  <project path="vendor/pixel" name="android_vendor_pixel" remote="eucos" />
+  <project path="vendor/qcom/sdclang-3.9/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-3.9_linux-x86" remote="github" revision="oreo" />
+  <project path="vendor/qcom/sdclang-4.0/linux-x86" name="ThankYouMario/proprietary_vendor_qcom_sdclang-4.0_linux-x86" remote="github" revision="oreo" />
+
+</manifest>
